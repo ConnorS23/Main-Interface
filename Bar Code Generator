@@ -1,0 +1,20 @@
+Barcode();
+Barcode(string);
+Barcode (string, BarcodeLib.TYPE);
+BarCodeLib.Barcode b = new BarCodeLib.Barcode(BarCodeLib.TYPE.UPCA, 
+          "038000356216", Color.Black, Color.White, 300, 150);
+public Image Encode(TYPE iType, string StringToEncode, int Width, int Height)
+public Image Encode(TYPE iType, string StringToEncode, 
+        Color ForeColor, Color BackColor, int Width, int Height)
+public Image Encode(TYPE iType, string StringToEncode, Color ForeColor, Color BackColor)
+public Image Encode(TYPE iType, string StringToEncode)
+Encode(TYPE iType)
+Encode()
+public void SaveImage(string Filename, SaveTypes FileType)
+b.IncludeLabel = true;
+b.XML
+using (Graphics g = Graphics.FromImage(b))
+{
+    g.DrawLine(new Pen(c), x, 0, x, b.Height);
+    g.DrawLine(new Pen(c), x + 1, 0, x + 1, b.Height);
+}//using
