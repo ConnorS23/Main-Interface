@@ -69,3 +69,4 @@ function EncodeCode39(data,checkDigit)
 .
 .
 .
+</script>
